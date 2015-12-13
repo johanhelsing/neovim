@@ -183,6 +183,12 @@ static char_u *skip_string(char_u *p)
 }
 
 
+// Find result cache for cpp_baseclass
+typedef struct {
+    int found;
+    lpos_T lpos;
+} cpp_baseclass_cache_T;
+
 /*
  * Functions for C-indenting.
  * Most of this originally comes from Eric Fischer.
